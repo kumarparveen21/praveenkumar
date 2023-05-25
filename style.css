@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 100%;
+}
+body{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.98);
+}
+
+ul{
+           
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+li{
+    padding: 10px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+nav{
+    background-color:rgba(0, 0, 0, 0.504);
+    position: fixed;
+    width: 100%;
+    display: block;
+}
+.logo{
+    float: left;
+    width: 40%;
+}
+h6{
+    font-size: 30px;
+}
+li:hover{
+    background-color:black;
+}
+.dropdown{
+    background-color: blue;
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+}
+.drop:hover .dropdown{
+    display: block;
+}
+.drop{
+    position: relative;
+}
+.dropdown li:hover{
+    background-color: black;
+}
+a:hover{
+color: red;
+}
+.hading{
+    width: 50%;
+    /* text-align: center; */
+    margin: 5px;
+    padding: 20px;
+    color: white;
+    float: left;
+    margin-top: 5%;
+}
+.home{
+    border: 1 px solid white;
+    /* height: 500px; */
+    display: flex;
+    /* padding: 16px; */
+}
+h4{
+    margin: 5px;
+    padding: 10px;
+}
+h1{
+    margin: 5px;
+    padding: 10px;
+}
+.img{
+    /* margin: 5px; */
+    padding: 55px;
+    float: right;
+    width: 50%;
+    color: white;
+}
+
+img{
+    border-radius: 30px;
+    max-width: 100%;
+}
+h5{
+    font-size: 40px;
+    text-align: center;
+    color: white;
+    margin: 8px;
+    padding: 18px;
+}
+.card{
+    border-radius: 30px;
+    max-width:300px;
+    border: 1px solid wheat;
+}
+.card:hover{
+    max-width: 400px;
+}
+.content{
+    padding: 6px;
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    text-align: center;
+    
+}
+
+
+.main{
+    display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  /* height: 100vh; */
+}
+form{
+    color: white;
+    width: 55%;
+    margin: auto;
+    /* border: 1px solid white; */
+    padding: 5%;
+}
+form button{
+    margin: auto;
+    /* padding: 1%; */
+    width: 40%;
+    border-radius: 10px;
+    text-align: center;
+    height: 40px;
+    background-color: rgba(0, 0, 255, 0.641);
+    color: white;
+    display: block;
+}
+button:hover{
+    background-color: rgba(52, 184, 52, 0.879);
+    color: black;
+}
+textarea{
+    width: 100%;
+    border-radius: 9px;
+    height: 40px;
+}
+textarea:hover{
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+}
+input{
+    height: 40px;
+    margin: 2px;
+    width: 100%;
+    border-radius: 9px;
+}
+input:hover{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+}
+h2{
+    display: block;
+    text-align: center;
+    font-size: 40px;
+}
+.about_me{
+    margin: 2%;
+    margin-top: 5%;
+    max-width: 100%;
+}
+i{
+    align-items: center;
+    padding: 2%;
+    color: palevioletred;
+}
+.icon{
+    display: flex;
+    margin-bottom: 20px;
+}
+.icon div{
+    width: 50%;
+}
+.home p,h3{
+    line-height: 30px;
+}
+
+
+/* media querie */
+@media  screen and (max-width: 768px) {
+    nav{
+        background-color: black;
+        top: 0;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+    nav ul{
+        display: none;
+    }
+    .home{
+        display: block; 
+    } 
+    .hading{
+        margin-top: 0;
+    }
+    .home .hading,.img{
+        width: 100%;
+    } 
+    form{
+        width: 80%;
+    }
+    form input{
+        margin-bottom: 20px;
+    }
+    form button{
+        margin-top: 20px;
+    }
+    .icon{
+        display: block;
+    }
+    .icon div{
+        margin-bottom: 10px;
+        width: 100%;
+    }
+}
